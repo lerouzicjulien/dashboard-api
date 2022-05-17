@@ -1,13 +1,20 @@
 // == Import
-import reactLogo from './react-logo.svg';
-import './styles.css';
+import User from '../User';
+import Meteo from '../Meteo';
+import Image from '../Image';
+import Beer from '../Beer';
+import './styles.scss';
 
 // == Composant
 function App() {
+  console.log('where is the problem (App)');
   return (
     <div className="app">
-      <img src={reactLogo} alt="react logo" />
-      <h1>Composant : App</h1>
+      <h1>Dashboard</h1>
+      <User />
+      <Meteo />
+      <Image />
+      <Beer />
     </div>
   );
 }
