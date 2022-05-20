@@ -1,6 +1,8 @@
 @use 'reset';
-@use 'vars';
+@import 'vars';
 
 body {
   font-family: sans-serif;
+  background-color: $main-color;
+  padding: 2em;
 }

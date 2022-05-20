@@ -1,0 +1,8 @@
+@import 'src/styles/vars';
+
+.meteo{
+  width: 65%;
+  border-radius: $press-on-border-radius;
+  box-shadow: $press-on-border-box-shadow;
+  margin: 2em;
+}

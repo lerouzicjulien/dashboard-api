@@ -1,0 +1,11 @@
+@import 'src/styles/vars';
+
+.user{
+  width: 30%;
+  height: 20rem;
+  border-radius: $press-on-border-radius;
+  background: $press-on-border-background;
+  box-shadow: $press-on-border-box-shadow;
+  padding: 2em;
+  // border
+}

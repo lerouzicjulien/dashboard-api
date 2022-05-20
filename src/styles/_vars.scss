@@ -8,13 +8,13 @@ $dark-color: #4D5764;
 $press-on-border-radius: 50px;
 $press-on-border-background: #929BA8;
 $press-on-border-box-shadow: inset 27px 27px 55px #808894,
-                                    inset -27px -27px 55px #a4aebc;
+                            inset -27px -27px 55px #a4aebc;
 
 //press-off :
 $press-off-border-radius: 50px;
 $press-off-background: #929BA8;
 $press-off-box-shadow:  27px 27px 55px #808894,
-                              -27px -27px 55px #a4aebc;
+                        -27px -27px 55px #a4aebc;
 
 //round-press-on :
 $round-press-on-border-radius: 50px;
@@ -29,3 +29,4 @@ $round-press-of-box-shadow:  20px 20px 40px #7e8590,
                             -20px -20px 40px #a6b1c0;
 
 //* fonts 
+$main-fonts: 'Russo One';
