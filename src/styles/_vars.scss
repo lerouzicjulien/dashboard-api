@@ -1,0 +1,31 @@
+//* colors 
+$main-color: #929BA8;
+$dark-color: #4D5764;
+
+//* neumorphisme
+
+//press-on : 
+$press-on-border-radius: 50px;
+$press-on-border-background: #929BA8;
+$press-on-border-box-shadow: inset 27px 27px 55px #808894,
+                                    inset -27px -27px 55px #a4aebc;
+
+//press-off :
+$press-off-border-radius: 50px;
+$press-off-background: #929BA8;
+$press-off-box-shadow:  27px 27px 55px #808894,
+                              -27px -27px 55px #a4aebc;
+
+//round-press-on :
+$round-press-on-border-radius: 50px;
+$round-press-on-background: linear-gradient(145deg, #838c97, #9ca6b4);
+$round-press-on-box-shadow:  27px 27px 55px #808894,
+                            -27px -27px 55px #a4aebc;
+
+//round-press-of :
+$round-press-of-border-radius: 50%;
+$round-press-of-background: linear-gradient(145deg, #9ca6b4, #838c97);
+$round-press-of-box-shadow:  20px 20px 40px #7e8590,
+                            -20px -20px 40px #a6b1c0;
+
+//* fonts 
