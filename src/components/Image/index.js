@@ -1,8 +1,9 @@
-const Image = () => {
-  console.log('where is the problem (Image)');
-  return (
-    <h1>Image</h1>
-  );
-};
+import './styles.scss';
+
+const Image = () => (
+  <div className="image">
+    <h1 className="image-title">Image</h1>
+  </div>
+);
 
 export default Image;

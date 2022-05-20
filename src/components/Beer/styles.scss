@@ -1,0 +1,16 @@
+@import 'src/styles/vars';
+
+.beer{
+  width: 20%;
+  border-radius: $press-on-border-radius;
+  box-shadow: $press-on-border-box-shadow;
+  margin: 1em;
+  padding: 2em;
+
+  &-title{
+    color: $dark-color;
+    font-family: $main-font;
+    font-size: xx-large;
+    text-align: center;
+  }
+}

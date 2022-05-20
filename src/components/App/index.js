@@ -11,10 +11,12 @@ function App() {
   return (
     <div className="app">
       <h1 className="dashboard-title">Dashboard</h1>
-      <User />
+      <div className="part-one">
+        <User />
+        <Image />
+        <Beer />
+      </div>
       <Meteo />
-      <Image />
-      <Beer />
     </div>
   );
 }

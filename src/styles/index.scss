@@ -2,7 +2,6 @@
 @import 'vars';
 
 body {
-  font-family: sans-serif;
+  font-family: $main-font;
   background-color: $main-color;
-  padding: 2em;
 }

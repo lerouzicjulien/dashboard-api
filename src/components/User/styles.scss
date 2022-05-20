@@ -1,11 +1,17 @@
 @import 'src/styles/vars';
 
 .user{
-  width: 30%;
+  width: 20%;
   height: 20rem;
   border-radius: $press-on-border-radius;
   background: $press-on-border-background;
   box-shadow: $press-on-border-box-shadow;
   padding: 2em;
-  // border
+  margin: 1em;
+
+  &-name{
+    color: $dark-color;
+    font-family: $main-font;
+    font-size: x-large;
+  }
 }

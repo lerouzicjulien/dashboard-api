@@ -1,7 +1,11 @@
+import './styles.scss';
+
 const Beer = () => {
   console.log('where is the problem (Beer)');
   return (
-    <h1>Beer</h1>
+    <div className="beer">
+      <h1 className="beer-title">Beer</h1>
+    </div>
   );
 };
 

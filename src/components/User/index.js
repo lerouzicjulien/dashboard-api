@@ -4,7 +4,7 @@ const User = () => {
   console.log('where is the problem (User)');
   return (
     <div className="user">
-      <h1>Hello User</h1>
+      <h1 className="user-name">Hello User</h1>
       <h3>adresse : fdsgdfgsdfg sfdg sfgsfgsfhsfghsf ghsfdgwfgfggfg
         dfgfdgdfgdfwgfdgdg sdfg dfg sdgsdg sdg sdgds.
       </h3>

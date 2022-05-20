@@ -2,17 +2,26 @@
 
 .app{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  // justify-content: space-around;
+  height: 100vh;
+  width: 100vw;
+}
+.part-one{
+  display: flex;
+  justify-content: space-around;
 }
 
 .dashboard-title{
-  font-family: $main-fonts;
-  font-size: 5rem;
-  text-align: center;
+  font-family: $main-font;
+  font-size: 4rem;
   font-weight: 700;
   color: $press-off-background;
   text-shadow: 5px 5px 26px #656b74,
   -5px -5px 26px #bfcbdc;
   width: 100%;
+  text-align: center;
+  align-self: flex-start;
 }
+
