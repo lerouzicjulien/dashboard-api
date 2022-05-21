@@ -1,4 +1,6 @@
 // == Imports
+import { useState } from 'react';
+
 import User from '../User';
 import Meteo from '../Meteo';
 import Image from '../Image';
@@ -7,7 +9,10 @@ import './styles.scss';
 
 // == Composants
 function App() {
-  console.log('where is the problem (App)');
+  const [meteo, setMeteo] = useState({});
+  const [isLoading, setIsLoading] = useState(true);
+
+  console.log(meteo);
   return (
     <div className="app">
       <h1 className="dashboard-title">Dashboard</h1>
@@ -16,7 +21,12 @@ function App() {
         <Image />
         <Beer />
       </div>
-      <Meteo />
+      <Meteo
+        meteo={meteo}
+        isLoading={isLoading}
+        setIsLoading={setIsLoading}
+        setMeteo={setMeteo}
+      />
     </div>
   );
 }
