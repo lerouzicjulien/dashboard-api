@@ -1,6 +1,7 @@
 import './styles.scss';
 import axios from 'axios';
 import PropTypes from 'prop-types';
+import { PacmanLoader } from 'react-spinners';
 import ResultMeteo from './ResultMeteo';
 
 function Meteo({
@@ -20,6 +21,7 @@ function Meteo({
         console.log(error);
       })
       .then(() => {
+
       });
   };
 
@@ -30,7 +32,7 @@ function Meteo({
       <form className="meteo-form">
         <input className="meteo-form-input" placeholder="Tape, tape petit clavier... Cherche, cherche tu vas trouver !" />
       </form>
-      {isLoading ? '' : <ResultMeteo meteo={meteo} />}
+      {isLoading ? <PacmanLoader className="pacman" color="#4D5764" size={150} /> : <ResultMeteo meteo={meteo} />}
     </div>
   );
 }

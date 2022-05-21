@@ -1,12 +1,16 @@
 @import 'src/styles/vars';
 
+.css-18hu5k{
+  display: flex;
+  margin:auto;
+}
 .meteo{
   width: 80%;
   border-radius: $press-off-border-radius;
   box-shadow: $press-off-box-shadow;
   margin: 1em;
   padding: 2em;
-  height: 100%;
+  min-height: 30em;
  
   
   &-title{
