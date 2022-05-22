@@ -1,23 +1,66 @@
 @import 'src/styles/vars';
 
-.css-18hu5k{
-  display: flex;
-  margin:auto;
-}
 .meteo{
   width: 80%;
   border-radius: $press-off-border-radius;
   box-shadow: $press-off-box-shadow;
   margin: 1em;
-  padding: 2em;
-  min-height: 30em;
+  padding: 1em;
+  min-height: 20em;
  
-  
-  &-title{
-    color: $dark-color;
-    font-family: $main-font;
-    font-size: xx-large;
-    text-align: center;
+  &-Result-firstRow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2em;
+  }
+
+  &-region{
+    margin-bottom: 0.2em;
+    font-size: x-large;
+  }
+
+  &-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    &-input{
+      border: none;
+      border-radius: 5px;
+      background: #929BA8;
+      box-shadow: inset 5px 5px 10px #7c848f,
+            inset -5px -5px 10px #a8b2c1;
+      width: 35em;
+      height: 3em;
+      text-align: center;
+      color: $dark-color;
+      margin: 0.5em;
+      font-family: $main-font;
+      padding: 1em;
+      &::placeholder{
+        color: $dark-color;
+        opacity: 0.5;
+      }
+    }
+    &-button{
+      border: none;
+      border-radius: 5px;
+      background: #929BA8;
+      box-shadow:  5px 5px 10px #7c848f,
+             -5px -5px 10px #a8b2c1;
+      color: $dark-color;
+      height: 3em;
+      width: 3em;
+
+      &:active{
+        border-radius: 5px;
+        background: #929BA8;
+        box-shadow: inset 5px 5px 10px #7c848f,
+            inset -5px -5px 10px #a8b2c1;
+      }
+    }
   }
 
   &-currentDay{
@@ -27,9 +70,26 @@
     justify-content: space-around;
     // width: 15%;
     border-radius: 1em;
-    box-shadow: $press-on-border-box-shadow;
+    box-shadow: inset 7px 7px 21px #808894,
+    inset -7px -7px 21px #a4aebc;;
     padding: 1em;
-    width: 30%;
+    height: 80%;
+    width: 130%;
+    
+    &-dayhour{ 
+      justify-items: flex-start;
+
+    }
+    &-tempAndicon{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &-precAndhumAndwind{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
     &-precip{
       color: $dark-color;
@@ -40,7 +100,12 @@
     &-wind{
       color: $dark-color;
     }
-    // margin: 2em;
+    &-temp{
+      font-size: x-large;
+    }
+    &-icon img{
+      width: 5em;
+    }
   }
 
   &-nextdays{
@@ -49,28 +114,53 @@
     justify-content: space-evenly;
     align-content: space-around;
     width: 75%;
+    margin-left: 2em;
   }
 
   &-nextday{
     display: flex;
-    justify-content: center;
-    width: 15%;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 20%;
     border-radius: 1em;
-    box-shadow: $press-on-border-box-shadow;
-    padding: 1em;
-    margin: 2em;
+    box-shadow: 7px 7px 21px #808894,
+    -7px -7px 21px #a4aebc;
+    padding: 2em;
+    margin: 1em;
 
-    &-maxTemp{
-      color: $dark-color;
+    &:hover{
+      box-shadow: inset 7px 7px 21px #808894,
+      inset -7px -7px 21px #a4aebc;;
     }
-    &-minTemp{
-      color: $dark-color;
+
+    &-day{
+      text-align: center;
     }
+
+    &-temp{
+      color: $dark-color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &-minmax{
+        display: flex;
+        flex-direction: column;
+      }
+      &-maxTemp{
+    }
+      &-minTemp{
+    }
+    }
+
+    &-icon img{
+      width: 4em;;
+    }
+
   }
 }
 
 .meteoResult{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
