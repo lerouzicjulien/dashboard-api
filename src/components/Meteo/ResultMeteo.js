@@ -59,7 +59,7 @@ ResultMeteo.propTypes = {
       PropTypes.shape({
         day: PropTypes.string.isRequired,
         comment: PropTypes.string.isRequired,
-        max_temps: PropTypes.shape({
+        max_temp: PropTypes.shape({
           c: PropTypes.number.isRequired,
         }).isRequired,
         min_temp: PropTypes.shape({

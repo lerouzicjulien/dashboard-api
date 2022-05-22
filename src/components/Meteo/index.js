@@ -5,20 +5,15 @@ import ResultMeteo from './ResultMeteo';
 function Meteo({
   meteo,
   setLocationToSearch,
-  locationToSearch,
   loadMeteo,
-  // setInputValue,
-  // inputValue,
 }) {
   return (
     <div className="meteo">
-      {/* <h1 className="meteo-title">Meteo</h1> */}
-      {/* <button type="button" onClick={handleMeteo}>load meteo</button> */}
       <form className="meteo-form" onSubmit={loadMeteo}>
         <input
           className="meteo-form-input"
           placeholder="Tape, tape petit clavier... Cherche, cherche tu vas trouver !"
-          value={locationToSearch}
+          // value={locationToSearch}
           onChange={(event) => {
             setLocationToSearch(event.target.value);
           }}
@@ -33,10 +28,7 @@ function Meteo({
 Meteo.propTypes = {
   meteo: PropTypes.shape({}).isRequired,
   setLocationToSearch: PropTypes.func.isRequired,
-  // setMeteo: PropTypes.func.isRequired,
-  locationToSearch: PropTypes.string.isRequired,
   loadMeteo: PropTypes.func.isRequired,
-  // inputValue: PropTypes.string.isRequired,
 };
 
 export default Meteo;

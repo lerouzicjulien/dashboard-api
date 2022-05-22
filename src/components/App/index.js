@@ -12,15 +12,14 @@ import './styles.scss';
 // == Composants
 function App() {
   const [meteo, setMeteo] = useState({});
+  const [beer, setBeer] = useState({});
   const [isLoading, setIsLoading] = useState(true);
-  // const [inputValue, setInputValue] = useState('');
-  const [locationToSearche, setLocationToSearch] = useState('bordeaux');
+  const [locationToSearch, setLocationToSearch] = useState('Bordeaux');
 
   const loadMeteo = () => {
     setIsLoading(true);
-    axios.get(`https://weatherdbi.herokuapp.com/data/weather/${locationToSearche}`)
+    axios.get(`https://weatherdbi.herokuapp.com/data/weather/${locationToSearch}`)
       .then((response) => {
-      // console.log(response.data.region);
         setMeteo(response.data);
         setIsLoading(false);
       })
@@ -31,7 +30,22 @@ function App() {
       });
   };
 
+  const loadBeer = () => {
+    setIsLoading(true);
+    axios.get('https://api.punkapi.com/v2/beers/random')
+      .then((response) => {
+        setBeer(response.data[0]);
+        // console.log(response.data[0]);
+        setIsLoading(false);
+      })
+      .catch((error) => {
+        console.log(error);
+      })
+      .then(() => {
+      });
+  };
   useEffect(() => {
+    // loadBeer();
     loadMeteo();
   }, []);
 
@@ -43,13 +57,13 @@ function App() {
           <Meteo
             meteo={meteo}
             setLocationToSearch={setLocationToSearch}
-            locationToSearche={locationToSearche}
+            locationToSearch={locationToSearch}
             loadMeteo={loadMeteo}
           />
           <div className="part-one">
             <User />
             <Image />
-            <Beer />
+            {/* <Beer beer={beer} /> */}
           </div>
         </div>
       )}
