@@ -3,6 +3,8 @@ import './styles.scss';
 import PropTypes from 'prop-types';
 
 function ResultMeteo({ meteo }) {
+  const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+
   return (
     <div className="meteoResult">
       <div className="meteo-Result-firstRow">
@@ -22,7 +24,7 @@ function ResultMeteo({ meteo }) {
       </div>
       <div className="meteo-nextdays">
         {meteo.next_days.map((item) => (
-          <div className="meteo-nextday" key={item.day}>
+          <div className="meteo-nextday" key={numbers.map((i) => i[0])}>
             <div className="meteo-nextday-day">{item.day}</div>
             <div className="meteo-nextday-temp">
               <div className="meteo-nextday-temp-minmax">

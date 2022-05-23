@@ -4,7 +4,7 @@
   width: 80%;
   border-radius: $press-off-border-radius;
   box-shadow: $press-off-box-shadow;
-  margin: 1em;
+  margin: 3em;
   padding: 1em 5em;
   min-height: 20em;
  
@@ -17,8 +17,9 @@
   }
 
   &-region{
-    margin-bottom: 0.2em;
-    font-size: x-large;
+    margin-bottom: 0.5em;
+    font-size: 1.3em;
+    align-self: flex-start;
   }
 
   &-form{
@@ -32,13 +33,14 @@
       background: #929BA8;
       box-shadow: inset 5px 5px 10px #7c848f,
             inset -5px -5px 10px #a8b2c1;
-      width: 25em;
+      width: 31em;
       height: 2em;
       text-align: center;
       color: $dark-color;
       margin: 0.5em;
       font-family: $main-font;
-      font-size: x-large;
+      font-size: large;
+      padding: 1em;
       &::placeholder{
         color: $dark-color;
         opacity: 0.5;
@@ -68,13 +70,18 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    // width: 15%;
     border-radius: 1em;
-    box-shadow: inset 7px 7px 21px #808894,
-    inset -7px -7px 21px #a4aebc;;
-    padding: 1em;
+    box-shadow: 7px 7px 21px #808894,
+    -7px -7px 21px #a4aebc;
+    padding: 2em;
     height: 80%;
     width: 130%;
+
+    &:hover{
+      border-radius: 1em;
+      box-shadow: inset 7px 7px 21px #808894,
+                  inset -7px -7px 21px #a4aebc;;
+    }
     
     &-dayhour{ 
       justify-items: flex-start;
@@ -125,8 +132,8 @@
     border-radius: 1em;
     box-shadow: 7px 7px 21px #808894,
     -7px -7px 21px #a4aebc;
-    padding: 2em;
-    margin: 1em;
+    padding: 1em;
+    margin: 0.3em;
 
     &:hover{
       box-shadow: inset 7px 7px 21px #808894,
@@ -146,14 +153,10 @@
         display: flex;
         flex-direction: column;
       }
-      &-maxTemp{
-    }
-      &-minTemp{
-    }
     }
 
     &-icon img{
-      width: 4em;;
+      width: 4em;
     }
 
   }

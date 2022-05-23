@@ -4,35 +4,30 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  // justify-content: space-around;
+  justify-content: space-around;
   height: 100vh;
   width: 100vw
 }
 .part-one{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.part-two{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .dashboard-title{
   font-family: $main-font;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 700;
-  // color: $press-off-background;
-  // text-shadow: 5px 5px 26px #656b74,
-  // -5px -5px 26px #bfcbdc;
-
   color: $dark-color;
-  // text-shadow:  11px 11px 22px #666d76,
-  //            -11px -11px 22px #becada;
-
-  width: 100%;
+  width: 20%;
   text-align: center;
-  align-self: flex-start;
-  margin-top: 0.3em;
-}
-
-.dashboard{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin: 1em;
 }

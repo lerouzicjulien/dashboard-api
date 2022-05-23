@@ -9,7 +9,13 @@ function Meteo({
 }) {
   return (
     <div className="meteo">
-      <form className="meteo-form" onSubmit={loadMeteo}>
+      <form
+        className="meteo-form"
+        onSubmit={(e) => {
+          e.preventDefault();
+          loadMeteo();
+        }}
+      >
         <input
           className="meteo-form-input"
           placeholder="Tape, tape petit clavier... Cherche, cherche tu vas trouver !"
