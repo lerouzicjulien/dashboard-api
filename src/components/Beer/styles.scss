@@ -5,8 +5,8 @@
   height: 20rem;
   border-radius: $press-on-border-radius;
   box-shadow: $press-on-border-box-shadow;
-  margin: 1em;
-  margin-right: 2em;
+  margin-bottom: 1em;
+  margin-right: 1em;
   padding: 1em;
 
   &-title{
@@ -14,5 +14,37 @@
     font-family: $main-font;
     font-size: xx-large;
     text-align: center;
+  }
+
+  &-result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-partOne{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 60%;
+      margin: 1em;
+
+      &-name{
+        font-family: $main-font;
+        font-size: x-large;
+        margin-bottom: 0.5em;
+      }
+      &-tagline{
+
+      }
+      &-description{
+        color: $dark-color;
+      }
+    }
+
+    &-image{
+      height: 15em;
+      border-radius: 0.5em;
+      margin: 0.5em;
+    }
   }
 }

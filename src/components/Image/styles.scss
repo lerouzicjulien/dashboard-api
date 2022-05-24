@@ -2,10 +2,11 @@
 
 .image{
   width: 30%;
+  height: 20em;
   border-radius: $press-on-border-radius;
   box-shadow: $press-on-border-box-shadow;
-  margin: 1em;
-  margin-left: 2em;
+  margin-left: 1em;
+  margin-bottom: 1em;
   padding: 1em;
 
   &-title{
@@ -15,7 +16,32 @@
     text-align: center;
   }
 
-  &-img{
-    width: 50%;
+  &-result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-title{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 40%;
+      margin: 1em;
+
+      &-nasaTitle{
+        font-family: $main-font;
+        font-size: x-large;
+        margin-bottom: 0.5em;
+      }
+      &-date{
+        color: $dark-color;
+      }
+    }
+    &-img{
+      width: 50%;
+      border-radius: 0.5em;
+      margin: 1em;
+    }
   }
+
 }

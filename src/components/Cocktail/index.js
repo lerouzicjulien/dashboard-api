@@ -1,13 +1,25 @@
 import './styles.scss';
+import PropTypes from 'prop-types';
 
-const User = () => (
-  <div className="user">
-    <h1 className="user-name">Hello User</h1>
-    <p>
-      Ciboire de viande à chien d'étole de mautadit de baptême de verrat de bâtard de
-      sacréfice de saint-ciboire de cochonnerie de tabarnak.
-    </p>
+const Cocktail = ({ cocktail }) => (
+  <div className="cocktail">
+    <h1 className="cocktail-title">Cocktail of the day</h1>
+    <div className="cocktail-result">
+      <div className="cocktail-result-partOne">
+        <h3 className="cocktail-result-partOne-name">{cocktail.strDrink}</h3>
+        <p className="cocktail-result-partOne-instructions">{cocktail.strInstructions}</p>
+      </div>
+      <img className="cocktail-result-image" src={cocktail.strDrinkThumb} alt="cocktail" />
+    </div>
   </div>
 );
 
-export default User;
+Cocktail.propTypes = {
+  cocktail: PropTypes.arrayOf(PropTypes.shape({
+    strDrink: PropTypes.string.isRequired,
+    strInstructions: PropTypes.string.isRequired,
+    strDrinkThumb: PropTypes.string.isRequired,
+  }).isRequired).isRequired,
+};
+
+export default Cocktail;

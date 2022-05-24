@@ -5,8 +5,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 100vh;
-  width: 100vw
+  height: fit-content;
+  width: fit-content
 }
 .part-one{
   display: flex;
@@ -30,4 +30,8 @@
   display: flex;
   flex-direction: column;
   margin: 1em;
+}
+
+.css-18hu5k{
+  margin: 5em;
 }
