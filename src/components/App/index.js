@@ -84,14 +84,13 @@ export default function App() {
     <div className="app">
       <div className="part-one">
         <h1 className="dashboard-title">Dashboard</h1>
-        {isLoadingMeteo ? <PacmanLoader className="pacman" color="#4D5764" size={150} /> : (
-          <Meteo
-            meteo={meteo}
-            setLocationToSearch={setLocationToSearch}
-            locationToSearch={locationToSearch}
-            loadMeteo={loadMeteo}
-          />
-        )}
+        <Meteo
+          meteo={meteo}
+          setLocationToSearch={setLocationToSearch}
+          locationToSearch={locationToSearch}
+          loadMeteo={loadMeteo}
+          isLoading={isLoadingMeteo}
+        />
       </div>
       <div className="part-two">
         {isLoadingImage ? <PacmanLoader className="pacman" color="#4D5764" size={50} /> : <Image image={image} />}
