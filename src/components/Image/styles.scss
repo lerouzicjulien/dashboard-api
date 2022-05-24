@@ -7,7 +7,7 @@
   margin-left: 1em;
   margin-bottom: 1em;
   padding: 1em;
-  padding-top: 2em;
+  padding-top: 1.2em;
   box-shadow: 7px 7px 21px #808894,
   -7px -7px 21px #a4aebc;
 
@@ -22,6 +22,7 @@
     font-size: xx-large;
     text-align: center;
     text-shadow: 1px 1px 5px white;
+    margin-bottom: 0.3em;
   }
 
   &-result{
@@ -45,10 +46,16 @@
         color: $dark-color;
       }
     }
-    &-img{
-      width: 50%;
+    &-image{
+      padding: 0.5em; 
       border-radius: 0.5em;
-      margin: 1em;
+      box-shadow: inset 5px 5px 10px #7c848f,
+      inset -5px -5px 10px #a8b2c1;
+      &-img{
+      height: 11em;
+      border-radius: 0.3em;
+      margin: 0.7em;
+      }
     }
   }
 

@@ -11,7 +11,7 @@ function Beer({ beer }) {
           <div className="beer-result-partOne-tagline">{beer.tagline}</div>
           <div className="beer-result-partOne-description">{beer.description}</div>
         </div>
-        <img className="beer-result-image" src={beer.image_url} alt="beer" />
+        <div className="beer-result-image"><img className="beer-result-image-img" src={beer.image_url} alt="beer" /></div>
       </div>
 
     </div>

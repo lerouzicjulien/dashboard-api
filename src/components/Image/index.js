@@ -9,7 +9,7 @@ const Image = ({ image }) => (
         <h3 className="image-result-title-nasaTitle">{image.title}</h3>
         <h3 className="image-result-title-date">{image.date}</h3>
       </div>
-      <img className="image-result-img" src={image.url} alt="of the day" />
+      <div className="image-result-image"><img className="image-result-image-img" src={image.url} alt="of the day" /></div>
     </div>
   </div>
 );

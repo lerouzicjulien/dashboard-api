@@ -5,7 +5,7 @@
   height: 20rem;
   border-radius: 15px;
   padding: 1em;
-  padding-top: 2em;
+  padding-top: 1.2em;
   margin-bottom: 1em;
   box-shadow: 7px 7px 21px #808894,
   -7px -7px 21px #a4aebc;
@@ -21,6 +21,7 @@
     font-size: xx-large;
     text-align: center;
     text-shadow: 1px 1px 5px white;
+    margin-bottom: 0.3em;
   }
 
   &-result{
@@ -33,7 +34,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
-      width: 40%;
+      width: 45%;
       margin: 1em;
 
       &-name{
@@ -48,9 +49,15 @@
     }
 
     &-image{
-      width: 40%;
+      padding: 0.5em; 
       border-radius: 0.5em;
-      margin: 1em;
+      box-shadow: inset 5px 5px 10px #7c848f,
+      inset -5px -5px 10px #a8b2c1;
+      &-img{
+      height: 12em;
+      border-radius: 0.3em;
+      margin: 0.7em;
+      }
     }
   }
 

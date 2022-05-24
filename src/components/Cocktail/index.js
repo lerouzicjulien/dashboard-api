@@ -9,7 +9,7 @@ const Cocktail = ({ cocktail }) => (
         <h3 className="cocktail-result-partOne-name">{cocktail.strDrink}</h3>
         <p className="cocktail-result-partOne-instructions">{cocktail.strInstructions}</p>
       </div>
-      <img className="cocktail-result-image" src={cocktail.strDrinkThumb} alt="cocktail" />
+      <div className="cocktail-result-image"><img className="cocktail-result-image-img" src={cocktail.strDrinkThumb} alt="cocktail" /></div>
     </div>
   </div>
 );

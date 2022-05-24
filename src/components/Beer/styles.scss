@@ -7,7 +7,7 @@
   margin-bottom: 1em;
   margin-right: 1em;
   padding: 1em;
-  padding-top: 2em;
+  padding-top: 1.2em;
   box-shadow: 7px 7px 21px #808894,
   -7px -7px 21px #a4aebc;
 
@@ -26,14 +26,14 @@
 
   &-result{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 
     &-partOne{
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 60%;
+      width: 70%;
       margin: 1em;
 
       &-name{
@@ -50,9 +50,15 @@
     }
 
     &-image{
-      height: 13em;
+      padding: 0.5em; 
       border-radius: 0.5em;
+      box-shadow: inset 5px 5px 10px #7c848f,
+      inset -5px -5px 10px #a8b2c1;
+      &-img{
+      height: 13em;
+
       margin: 0.5em;
+      }
     }
   }
 }
