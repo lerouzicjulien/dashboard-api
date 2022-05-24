@@ -3,17 +3,25 @@
 .beer{
   width: 30%;
   height: 20rem;
-  border-radius: $press-on-border-radius;
-  box-shadow: $press-on-border-box-shadow;
+  border-radius: 15px;
   margin-bottom: 1em;
   margin-right: 1em;
   padding: 1em;
+  padding-top: 2em;
+  box-shadow: 7px 7px 21px #808894,
+  -7px -7px 21px #a4aebc;
+
+  &:hover{
+    box-shadow: inset 7px 7px 21px #808894,
+    inset -7px -7px 21px #a4aebc;;
+  }
 
   &-title{
     color: $dark-color;
     font-family: $main-font;
     font-size: xx-large;
     text-align: center;
+    text-shadow: 1px 1px 5px white;
   }
 
   &-result{
@@ -42,7 +50,7 @@
     }
 
     &-image{
-      height: 15em;
+      height: 13em;
       border-radius: 0.5em;
       margin: 0.5em;
     }

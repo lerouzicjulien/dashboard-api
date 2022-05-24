@@ -15,11 +15,11 @@ const Cocktail = ({ cocktail }) => (
 );
 
 Cocktail.propTypes = {
-  cocktail: PropTypes.arrayOf(PropTypes.shape({
+  cocktail: PropTypes.shape({
     strDrink: PropTypes.string.isRequired,
     strInstructions: PropTypes.string.isRequired,
     strDrinkThumb: PropTypes.string.isRequired,
-  }).isRequired).isRequired,
+  }).isRequired,
 };
 
 export default Cocktail;
