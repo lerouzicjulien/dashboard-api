@@ -1,12 +1,13 @@
 // == Imports
 import { useEffect } from 'react';
 import logo from 'src/assets/images/logoRZK-dashboard.png';
+import { getMeteo } from 'src/actions/meteo';
 import Meteo from '../Meteo';
 import './styles.scss';
-import { getMeteo } from '../../actions/meteo';
 
 export default function App() {
   useEffect(() => {
+    console.log('je suis le useEffect');
     getMeteo();
   }, []);
   return (

@@ -16,7 +16,7 @@ const reducer = (state = initialState, action = {}) => {
     case SAVE_METEO:
       return {
         ...state,
-        cities: action.cities,
+        meteo: action.meteo,
       };
     case CHANGE_LOCATION_TO_SEARCH: {
       return {
@@ -33,9 +33,9 @@ const reducer = (state = initialState, action = {}) => {
     case CLEAR_METEO_STATE: {
       return {
         ...state,
-        cities: undefined,
-        endPoint: '',
-        isCityLoaded: false,
+        meteo: {},
+        locationToSearch: '',
+        isMeteoLoaded: false,
       };
     }
     default:
