@@ -25,14 +25,21 @@
   font-size: 4rem;
   font-weight: 700;
   color: $dark-color;
-  width: 20%;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  margin: 1em;
   text-shadow: 1px 1px 10px white;
 }
 
+.dashboard-header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto 1em auto 2em;
+}
+
+.dashboard-logoRzk{
+  width: 20em
+}
 .css-18hu5k{
   margin: 5em;
 }

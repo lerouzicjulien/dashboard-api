@@ -11,8 +11,6 @@ function Meteo({
 }) {
   return (
     <div className="meteo">
-      {isLoading ? <PacmanLoader color="#4D5764" size={150} /> : (
-        <>
           <form
             className="meteo-form"
             onSubmit={(e) => {
@@ -31,8 +29,6 @@ function Meteo({
             <button type="button" className="meteo-form-button">&#128270;</button>
           </form>
           <ResultMeteo meteo={meteo} />
-        </>
-      )}
 
     </div>
   );
