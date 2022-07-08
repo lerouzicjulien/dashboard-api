@@ -4,8 +4,9 @@ export const CHANGE_LOCATION_TO_SEARCH = 'CHANGE_LOCATION_TO_SEARCH';
 export const CHANGE_IS_METEO_LOADED = 'CHANGE_IS_METEO_LOADED';
 export const CLEAR_METEO_STATE = 'CLEAR_METEO_STATE';
 
-export const getMeteo = () => ({
+export const getMeteo = (location) => ({
   type: GET_METEO,
+  location: location,
 });
 
 export const saveMeteo = (meteo) => ({

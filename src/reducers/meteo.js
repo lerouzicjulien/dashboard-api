@@ -27,7 +27,7 @@ const reducer = (state = initialState, action = {}) => {
     case CHANGE_IS_METEO_LOADED: {
       return {
         ...state,
-        isCityLoaded: action.bool,
+        isMeteoLoaded: action.bool,
       };
     }
     case CLEAR_METEO_STATE: {

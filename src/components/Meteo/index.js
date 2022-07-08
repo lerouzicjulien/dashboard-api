@@ -6,12 +6,12 @@ import { changeLocationToSearch, getMeteo } from '../../actions/meteo';
 
 const Meteo = () => {
   const dispatch = useDispatch;
-  const { meteo, isMeteoLoaded } = useSelector((state) => state.meteo);
+  const { meteo, isMeteoLoaded, locationToSearch } = useSelector((state) => state.meteo);
   const handleChange = (event) => {
     dispatch(changeLocationToSearch(event.target.value));
   };
   const handleSubmit = () => {
-    dispatch(getMeteo());
+    dispatch(getMeteo(locationToSearch));
   };
   return (
     <div className="meteo">
